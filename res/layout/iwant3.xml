@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productsList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editText_iwantquery"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/btn_iwant3send"
+        android:ems="10" />
+
+    <ListView
+        android:id="@+id/lv_countries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_iwantquery"
+        android:clickable="true"
+         >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_iwant3send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_iwantquery"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+
+    <ProgressBar
+        android:id="@+id/imgProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_iwantquery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

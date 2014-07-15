@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/singlerowb">
+
+    <TextView
+        android:id="@+id/textView_titleSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal_Title"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView_singleItemimage"
+        android:layout_width="108dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/textView_titleSingle"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView_singleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_titleSingle"
+        android:layout_toRightOf="@id/imageView_singleItemimage"
+        android:text="Price"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

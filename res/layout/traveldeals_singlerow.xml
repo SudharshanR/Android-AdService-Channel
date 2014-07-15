@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <TextView
+        android:id="@+id/textlista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="TextView" 
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imagelista"
+        android:layout_width="126dp"
+        android:layout_height="84dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textlista"
+        android:src="@drawable/deals" />
+
+    <TextView
+        android:id="@+id/textlista2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imagelista"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/imagelista"
+        android:text="TextView" />
+</RelativeLayout>

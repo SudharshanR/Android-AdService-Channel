@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+     
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_country"
+        android:padding="5dp" />
+    
+    <TextView 
+        android:id="@+id/tv_country_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_flag"
+        android:layout_below="@id/tv_country"  />
+    
+    <TextView 
+        android:id="@+id/product_price"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/iv_flag"
+        android:layout_below="@id/iv_flag"  />
+
+    <CheckBox
+        android:id="@+id/CheckBoxSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tv_country"
+        android:layout_marginRight="14dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
